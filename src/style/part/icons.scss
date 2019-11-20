@@ -1,0 +1,115 @@
+@import "sprite";
+
+[class^='icon-'], [class*=' icon-'] {
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../img/sprite.png') -9999px -9999px no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+	[class^='icon-'], [class*=' icon-'] {
+		background-image: url('../img/sprite@2x.png');
+		@include sprite-background-size($clock);
+	}
+}
+@mixin set-sprite($sprite) {
+	@include sprite-position($sprite);
+	@include sprite-width($sprite);
+	@include sprite-height($sprite);
+}
+
+.icon-clock {
+	@include set-sprite($clock);
+}
+.icon-views {
+	@include set-sprite($views);
+}
+.icon-heart {
+  @include set-sprite($heart);
+}
+.icon-star {
+  @include set-sprite($star);
+}
+.icon-check {
+  @include set-sprite($check);
+}
+.icon-check-blue {
+  @include set-sprite($check-blue);
+}
+.icon-nocheck {
+  @include set-sprite($nocheck);
+}
+.icon-arrow {
+  @include set-sprite($arrow);
+}
+.icon-arrow-down {
+  @include set-sprite($arrow-down);
+}
+.icon-vk {
+  @include set-sprite($vk);
+}
+.icon-fb {
+  @include set-sprite($fb);
+}
+.icon-ok {
+  @include set-sprite($ok);
+}
+.icon-tg {
+  @include set-sprite($tg);
+}
+.icon-viber {
+  @include set-sprite($viber);
+}
+.icon-tw {
+  @include set-sprite($tw);
+}
+.icon-mail {
+  @include set-sprite($mail);
+}
+.icon-phone {
+  @include set-sprite($phone);
+}
+.icon-pen {
+  @include set-sprite($pen);
+}
+.icon-marker {
+  @include set-sprite($marker);
+}
+.icon-heart-red {
+  @include set-sprite($heart-red);
+}
+.icon-star-small {
+  @include set-sprite($star-small);
+}
+.icon-doc {
+  @include set-sprite($doc);
+}
+.icon-download {
+  @include set-sprite($download);
+}
+.icon-border-check {
+  @include set-sprite($border-check);
+}
+.icon-toilet {
+  @include set-sprite($toilet);
+}
+.icon-cup {
+  @include set-sprite($cup);
+}
+.icon-water {
+  @include set-sprite($water);
+}
+.icon-car {
+  @include set-sprite($car);
+}
+.icon-passport {
+  @include set-sprite($passport);
+}
+.icon-contract {
+  @include set-sprite($contract);
+}
+.icon-metric {
+  @include set-sprite($metric);
+}
+.icon-check-small{
+  @include set-sprite($check-small);
+}
